@@ -13,7 +13,7 @@ if (isset($_ENV['CLEARDB_DATABASE_URL'])) {
 }
 
 class Zajemnik extends \atk4\data\Model {
-    public $table = 'zajemnik';
+    public $table = 'zajemnik_dfawess';
 function init(){
     parent::init();
     $this->addField('name');
@@ -26,7 +26,7 @@ function init(){
 }
 
 class Friends extends \atk4\data\Model {
-    public $table = 'friends';
+    public $table = 'friends_dfawess';
 function init(){
     parent::init();
     $this->addField('name');
@@ -39,7 +39,7 @@ function init(){
 }
 
 class Zajm extends \atk4\data\Model {
-    public $table = 'zajm';
+    public $table = 'zajm_dfawess';
 function init(){
     parent::init();
     $this->addField('value',['type'=>'money']);
@@ -49,7 +49,7 @@ function init(){
 }
 
 class Vozvrat extends \atk4\data\Model {
-    public $table = 'vozvrat';
+    public $table = 'vozvrat_dfawess';
 function init(){
     parent::init();
     $this->addField('value',['type'=>'money']);
